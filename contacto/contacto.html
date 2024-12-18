@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link css  -->
+    <link rel="stylesheet" href="../home_page/css/home_share.css" />
+    <link rel="stylesheet" href="../home_page/css/home_mobile.css" />
+    <link rel="stylesheet" href="./css/contacto.css" />
+    <!-- link favicon   -->
+    <link
+      rel="shortcut icon"
+      href="../home_page/img/favicon.svg"
+      type="image/x-icon"
+    />
+    <title>Contacto</title>
+  </head>
+
+  <body>
+    <!-- Nav -->
+    <header class="header-container">
+      <nav class="nav-container">
+        <div class="nav-logo">
+          <img src="../home_page/img/logomarca.svg" alt="logo" />
+        </div>
+        <div class="hamburger-container">
+          <button class="btn-hamburger">
+            <div id="hamburger"></div>
+          </button>
+        </div>
+        <div class="nav-link">
+          <ul>
+            <li><a href="../index.html">Homepage</a></li>
+            <li><a href="../treino/treino.html">Planos</a></li>
+            <li><a href="../blog/blog.html">Blog</a></li>
+            <li>
+              <a href="./contacto.html">Contactos</a>
+            </li>
+          </ul>
+          <div class="button">
+            <a href="/"><button id="start-session">Iniciar sessão</button></a>
+          </div>
+          <div class="language-container">
+            <span id="pt">PT</span>
+            <span id="en">EN</span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="main-container">
+        <!--  Espaço destinado ao conteudo centrald das páginas-->
+        <section class="title-container">
+          <h1>Contacte-nos para iniciar a sua jornada.</h1>
+        </section>
+
+        <!--Formulário de contactos-->
+        <section class="contacts-form">
+          <div class="contacts-form__description">
+            <h3 class="contacts-form__title">
+              O ShapeUp está sempre disponível para o ajudar.
+            </h3>
+            <p class="contacts-form__text">
+              Como cada um de nós tem um objectivo único, o nosso sucesso começa
+              com o plano certo. Poderemos ajudá-lo a descobrir o seu. Tire as
+              suas dúvidas ou visite as nossas instalações.
+            </p>
+          </div>
+
+          <div class="contacts-form__group">
+            <form class="contacts-form__form">
+              <div id="nomeEmail">
+                <div class="contacts-form__field">
+                  <label for="Name" class="contacts-form__label"></label>
+                  <input
+                    type="text"
+                    id="Name"
+                    name="Name"
+                    class="contacts-form__input"
+                    placeholder="Nome"
+                  />
+                </div>
+                <div class="contacts-form__field">
+                  <label for="email" class="contacts-form__label"></label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="contacts-form__input"
+                    placeholder="Email"
+                  />
+                </div>
+              </div>
+
+              <div class="contacts-form__field">
+                <label for="massage" class="contacts-form__label"></label>
+                <textarea
+                  name="massage"
+                  id="massage"
+                  cols="30"
+                  rows="10"
+                  class="contacts-form__textarea"
+                  placeholder="Escreva a sua mensagem aqui"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="contacts-form__button">
+                Submeter
+              </button>
+            </form>
+          </div>
+        </section>
+
+        <!--Três Formas de contacto-->
+
+        <section id="threeContacts">
+          <div class="contacts__item contacts__item--address card">
+            <img
+              src="img/card1.svg"
+              alt="Background image"
+              class="card__background"
+            />
+            <div class="card__content">
+              <div class="card__header">
+                <img
+                  src="./img/moradaIcone.svg"
+                  alt="Morada Icon"
+                  class="card__icon"
+                />
+                <h4 class="card__title">Morada</h4>
+              </div>
+              <p class="card__text">
+                R. de Ciríaco Cardoso 186 <br />
+                4150-212, Porto
+              </p>
+            </div>
+          </div>
+
+          <div class="contacts__item contacts__item--phone card">
+            <img
+              src="img/card2.svg"
+              alt="Background image"
+              class="card__background"
+            />
+            <div class="card__content">
+              <div class="card__header">
+                <img
+                  src="./img/telefonesIcone.svg"
+                  alt="Telefone Icon"
+                  class="card__icon"
+                />
+                <h4 class="card__title">Telefones</h4>
+              </div>
+              <p class="card__text">+351 226 195 200</p>
+            </div>
+          </div>
+
+          <div class="contacts__item contacts__item--email card">
+            <img
+              src="img/card3.svg"
+              alt="Background image"
+              class="card__background"
+            />
+            <div class="card__content">
+              <div class="card__header">
+                <img
+                  src="./img/emailIcone.svg"
+                  alt="Email Icon"
+                  class="card__icon"
+                />
+                <h4 class="card__title">E-mail</h4>
+              </div>
+              <p class="card__text">geral@shapeup.pt</p>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!--Mapa-->
+
+      <section class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3003.9009661160053!2d-8.652847587823686!3d41.1585122712103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd246582df7d8785%3A0xc967e42932cd22b4!2sCESAE%20Digital%20-%20Centro%20para%20o%20Desenvolvimento%20de%20Compet%C3%AAncias%20Digitais!5e0!3m2!1spt-PT!2spt!4v1733154580750!5m2!1spt-PT!2spt"
+          loading="lazy"
+          sandbox="allow-scripts allow-forms"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-container">
+      <div class="first-section">
+        <div class="first-section-container">
+          <div class="title-container">
+            <h4>
+              Assine a nossa newsletter e fique por dentro de todas as
+              novidades!
+            </h4>
+          </div>
+          <div class="input-container">
+            <img src="../home_page/img/icons/user.svg" alt="" />
+            <input class type="email" placeholder="Escreva o seu email" />
+            <button>Subscreva</button>
+          </div>
+        </div>
+      </div>
+      <div class="second-container">
+        <div class="social-container">
+          <div id="social-icons">
+            <span
+              ><img src="../home_page/img/icons/facebook.svg" alt=""
+            /></span>
+            <span
+              ><img src="../home_page/img/icons/instagram.svg" alt=""
+            /></span>
+            <span><img src="../home_page/img/icons/email.svg" alt="" /></span>
+          </div>
+          <div class="social-text-container">
+            <p>
+              Segunda a Sábado: 06:00 às 00:00 <br />
+              Domingo: 08:00 às 16:00 <br />
+              Feriados: Fechado
+            </p>
+          </div>
+        </div>
+        <div class="link-footer-container">
+          <div class="link-footer">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../treino/treino.html">Planos</a></li>
+              <li><a href="../blog/blog.html">Blog</a></li>
+            </ul>
+          </div>
+          <div class="link-footer">
+            <ul>
+              <li>
+                <a href="../contacto/contacto.html">Contactos</a>
+              </li>
+              <li><a href="/">Carreira</a></li>
+              <li><a href="/">Novidades</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copy-container">
+        <div class="copy">
+          <p id="order2">© 2024 Shape Up, All rights reserved.</p>
+          <ul>
+            <li><a href="#">Termos & Condições</a></li>
+            <li><a href="/">Política de Privacidade</a></li>
+            <li><a href="/">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- Link JavaScript -->
+    <script src="../home_page/js/home.js"></script>
+    <!-- link bootstrap js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+      integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

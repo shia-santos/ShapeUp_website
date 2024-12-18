@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Link bootstrap -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+            integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+            integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Fonte -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- link css  -->
+        <link rel="stylesheet" href="../home_page/css/home_share.css" />
+        <link rel="stylesheet" href="../home_page/css/home_mobile.css" />
+        <link rel="stylesheet" href="./css/treino.css" />
+        <!-- link favicon   -->
+        <link
+            rel="shortcut icon"
+            href="../home_page/img/favicon.svg"
+            type="image/x-icon"
+        />
+        <title>Planos</title>
+    </head>
+    <body>
+        <!-- Nav -->
+        <header class="header-container">
+            <nav class="nav-container">
+                <div class="nav-logo">
+                    <img src="../home_page/img/logomarca.svg" alt="logo" />
+                </div>
+                <div class="hamburger-container">
+                    <button class="btn-hamburger">
+                        <div id="hamburger"></div>
+                    </button>
+                </div>
+                <div class="nav-link">
+                    <ul>
+                        <li><a href="../index.html">Homepage</a></li>
+                        <li><a href="./treino.html">Planos</a></li>
+                        <li><a href="../blog/blog.html">Blog</a></li>
+                        <li>
+                            <a href="../contacto/contacto.html">Contactos</a>
+                        </li>
+                    </ul>
+                    <div class="button">
+                        <a href="/"
+                            ><button id="start-session">
+                                Iniciar sessão
+                            </button></a
+                        >
+                    </div>
+                    <div class="language-container">
+                        <span id="pt">PT</span>
+                        <span id="en">EN</span>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="main-container">
+            <!--  Espaço destinado ao conteudo centrald das páginas-->
+
+            <section class="title-container">
+                <h1>Explora a nossa oferta de treinos disponíveis.</h1>
+            </section>
+
+            <!-- Acordeão -->
+            <div class="container mt-5">
+                <div class="accordion" id="accordionPlanos">
+                    <!-- Bem-Esta e Saúde 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne"
+                                aria-expanded="false"
+                                aria-controls="collapseOne"
+                            >
+                                Bem-Estar e Sáude
+                            </button>
+                        </h2>
+                        <div
+                            id="collapseOne"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingOne"
+                            data-bs-parent="#accordionPlanos"
+                        >
+                            <div class="accordion-body">
+                                <div class="accordion-img">
+                                    <img src="img/massagem.png" alt="ginasio" />
+                                </div>
+                                <div class="accordion-text">
+                                    <p>
+                                        Descubra o equilíbrio perfeito entre
+                                        corpo e mente com o plano Bem-estar e
+                                        Saúde. Aproveite aulas de yoga, pilates
+                                        e massagens terapêuticas, além de
+                                        workshops de meditação e um
+                                        acompanhamento holístico focado na sua
+                                        qualidade de vida.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Perda de Peso 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo"
+                                aria-expanded="false"
+                                aria-controls="collapseTwo"
+                            >
+                                Perda de Peso
+                            </button>
+                        </h2>
+                        <div
+                            id="collapseTwo"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionPlanos"
+                        >
+                            <div class="accordion-body">
+                                <div class="accordion-img">
+                                    <img
+                                        src="img/perca_peso.png"
+                                        alt="ginasio"
+                                    />
+                                </div>
+                                <div class="accordion-text">
+                                    <p>
+                                        Transforme seu corpo com o plano Perda
+                                        de Peso. Tenha acesso a treinos
+                                        dinâmicos, consultoria nutricional
+                                        personalizada e workshops que promovem
+                                        um estilo de vida saudável, tudo pensado
+                                        para resultados duradouros.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ganho de Massa Muscular 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree"
+                                aria-expanded="false"
+                                aria-controls="collapseThree"
+                            >
+                                Ganho de Massa Muscular
+                            </button>
+                        </h2>
+                        <div
+                            id="collapseThree"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingThree"
+                            data-bs-parent="#accordionPlanos"
+                        >
+                            <div class="accordion-body">
+                                <div class="accordion-img">
+                                    <img
+                                        src="img/ganho_massa.png"
+                                        alt="ginasio"
+                                    />
+                                </div>
+                                <div class="accordion-text">
+                                    <p>
+                                        Construa força e definição com o plano
+                                        Ganho de Massa Muscular. Treinos
+                                        personalizados, suporte em suplementação
+                                        e técnicas avançadas de levantamento
+                                        farão você atingir seus objetivos de
+                                        hipertrofia com excelência.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instrutores e Profissionais -->
+            <section class="title">
+                <h3>Instrutores e Profissionais</h3>
+            </section>
+            <section class="instrutor-container">
+                <div class="first-section-instructor">
+                    <div class="instrutor-card">
+                        <div class="img-container-instructor">
+                            <img src="img/PedroAlmeida.png" alt="" />
+                        </div>
+                        <div>
+                            <div class="text-card-container">
+                                <h3>Pedro Almeida</h3>
+                                <h6>Personal Trainer</h6>
+                                <p>
+                                    Pedro é personal trainer certificado com
+                                    mais de 10 anos de experiência em treino
+                                    personalizado e otimização de resultados.
+                                    Especializa-se em treinos de força e
+                                    funcionalidade, sempre com foco nas
+                                    necessidades individuais de cada cliente.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instrutor-card">
+                        <div class="img-container-instructor">
+                            <img src="img/CarlaSilva.png" alt="" />
+                        </div>
+                        <div>
+                            <div class="text-card-container">
+                                <h3>Carla Silva</h3>
+                                <h6>Coach de Bem-Estar e Mindfulness</h6>
+                                <p>
+                                    Carla é coach certificada e instrutora de
+                                    mindfulness, com experiência em ajudar
+                                    indivíduos a equilibrar corpo e mente.
+                                    Oferece técnicas de relaxamento, gestão de
+                                    stress e meditação para otimizar o bem-estar
+                                    geral dos membros.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instrutor-card">
+                        <div class="img-container-instructor">
+                            <img src="img/personal01.png" alt="" />
+                        </div>
+                        <div>
+                            <div class="text-card-container">
+                                <h3>Marta Pereira</h3>
+                                <h6>Instrutora de Musculação e Hipertrofia</h6>
+                                <p>
+                                    Marta é especialista em musculação e
+                                    hipertrofia, com experiência em treinos de
+                                    força e ganho de massa muscular. Cria
+                                    programas personalizados para ajudar os
+                                    membros a alcançarem os seus objetivos de
+                                    forma eficiente, com foco em técnica e
+                                    progressão.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-section-container">
+                    <div class="instrutor-card">
+                        <div class="img-container-instructor">
+                            <img src="img/personal02.png" alt="" />
+                        </div>
+                        <div>
+                            <div class="text-card-container">
+                                <h3>Ana Oliveira</h3>
+                                <h6>Personal Trainer</h6>
+                                <p>
+                                    Especialista em treinos personalizados que
+                                    ajudam os alunos a atingir suas metas com
+                                    eficiência e segurança. Seu entusiasmo e
+                                    abordagem prática tornam cada sessão
+                                    transformadora, seja para emagrecimento,
+                                    ganho de força ou bem-estar geral.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instrutor-card">
+                        <div class="img-container-instructor">
+                            <img src="img/nutri01.png" alt="" />
+                        </div>
+                        <div>
+                            <div class="text-card-container">
+                                <h3>Beatriz Costa</h3>
+                                <h6>Nutricionista</h6>
+                                <p>
+                                    Apaixonada por promover uma alimentação
+                                    saudável e equilibrada. Desenvolvendo planos
+                                    nutricionais que alinham suas necessidades
+                                    com um estilo de vida prático e saudável.
+                                    Seu compromisso é orientar escolhas
+                                    alimentares que garantam resultados.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instrutor-card">
+                        <div class="img-container-instructor">
+                            <img src="img/instrutor_yoga.png" alt="" />
+                        </div>
+                        <div>
+                            <div class="text-card-container">
+                                <h3>Rafael Almeida</h3>
+                                <h6>Instrutor de Pilates e Yoga</h6>
+                                <p>
+                                    Com formação avançada em Pilates e Yoga. Ele
+                                    ajuda seus alunos a fortalecerem o corpo,
+                                    reduzirem o estresse e encontrarem
+                                    equilíbrio. Suas aulas são ideais para quem
+                                    busca transformar não apenas o físico, mas
+                                    também a mente.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="title">
+                <h3>Tabela de horários</h3>
+            </section>
+            <!-- Section table container-->
+            <div class="table-container">
+                <table class="table-horarios">
+                    <thead>
+                        <tr>
+                            <th>Rotina</th>
+                            <th>Segunda</th>
+                            <th>Terça</th>
+                            <th>Quarta</th>
+                            <th>Quinta</th>
+                            <th>Sexta</th>
+                            <th>Sábado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="color">07:00 <br />8:00</th>
+                            <td>Yoga</td>
+                            <td>HIIT</td>
+                            <td>Pilates</td>
+                            <td>HIIT</td>
+                            <td>Alongamentos</td>
+                            <td>Yoga</td>
+                        </tr>
+                        <tr>
+                            <th class="color">09:00 <br />10:00</th>
+                            <td>Circuitos</td>
+                            <td>Zumba</td>
+                            <td>Circuitos</td>
+                            <td>Zumba</td>
+                            <td>Funcional</td>
+                            <td>Powerlifting</td>
+                        </tr>
+                        <tr>
+                            <th class="color">18:00 <br />19:00</th>
+                            <td>HIIT</td>
+                            <td>Circuitos</td>
+                            <td>Zumba</td>
+                            <td>Circuitos</td>
+                            <td>HITT</td>
+                            <td>Pilates</td>
+                        </tr>
+                        <tr>
+                            <th class="color">19:00 <br />20:00</th>
+                            <td>Powerlifting</td>
+                            <td>Alongamentos</td>
+                            <td>Yoga</td>
+                            <td>Pilates</td>
+                            <td>Powerlifting</td>
+                            <td>Zumba</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer class="footer-container">
+            <div class="first-section">
+                <div class="first-section-container">
+                    <div class="title-container">
+                        <h4>
+                            Assine a nossa newsletter e fique por dentro de
+                            todas as novidades!
+                        </h4>
+                    </div>
+                    <div class="input-container">
+                        <img src="../home_page/img/icons/user.svg" alt="" />
+                        <input
+                            class
+                            type="email"
+                            placeholder="Escreva o seu email"
+                        />
+                        <button>Subscreva</button>
+                    </div>
+                </div>
+            </div>
+            <div class="second-container">
+                <div class="social-container">
+                    <div id="social-icons">
+                        <span
+                            ><img
+                                src="../home_page/img/icons/facebook.svg"
+                                alt=""
+                        /></span>
+                        <span
+                            ><img
+                                src="../home_page/img/icons/instagram.svg"
+                                alt=""
+                        /></span>
+                        <span
+                            ><img src="../home_page/img/icons/email.svg" alt=""
+                        /></span>
+                    </div>
+                    <div class="social-text-container">
+                        <p>
+                            Segunda a Sábado: 06:00 às 00:00 <br />
+                            Domingo: 08:00 às 16:00 <br />
+                            Feriados: Fechado
+                        </p>
+                    </div>
+                </div>
+                <div class="link-footer-container">
+                    <div class="link-footer">
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../treino/treino.html">Planos</a></li>
+                            <li><a href="../blog/blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-footer">
+                        <ul>
+                            <li>
+                                <a href="../contacto/contacto.html"
+                                    >Contactos</a
+                                >
+                            </li>
+                            <li><a href="/">Carreira</a></li>
+                            <li><a href="/">Novidades</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-container">
+                <div class="copy">
+                    <p id="order2">© 2024 Shape Up, All rights reserved.</p>
+                    <ul>
+                        <li><a href="#">Termos & Condições</a></li>
+                        <li><a href="/">Política de Privacidade</a></li>
+                        <li><a href="/">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- Link JavaScript -->
+        <script src="../home_page/js/home.js"></script>
+        <!-- link bootstrap js -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+            integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+    </body>
+</html>

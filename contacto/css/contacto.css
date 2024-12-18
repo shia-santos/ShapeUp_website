@@ -1,0 +1,344 @@
+@charset "utf-8";
+
+:root {
+  --color-primary: rgb(8, 4, 25);
+  --color-secondary: #4f45ea;
+  --color-tertiary: #a793f7;
+  --color-quaternary: #f5f5f5;
+}
+
+/* Main */
+main {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.main-container {
+  max-width: 1280px;
+  width: 100%;
+}
+
+/* Body */
+body {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 90%,
+      rgba(8, 4, 25, 1) 100%
+    ),
+    url("../img/background_body.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+}
+
+/* Section title text */
+section.title-container {
+  display: flex;
+  max-width: 983px;
+  width: 100%;
+  padding: 414px 0 472px 0;
+  max-width: 70ch;
+  margin-top: 96px;
+}
+
+.main-container .title-container h1 {
+  font-size: 64px;
+  color: var(--color-quaternary);
+  font-weight: bold;
+  margin: 0;
+}
+
+/*.............................................Formulário */
+
+.contacts-form {
+  display: flex;
+  gap: 140px;
+  background-color: rgba(247, 247, 247, 0.2);
+  border-radius: 40px;
+  padding: 40px;
+}
+
+.contacts-form__description,
+.contacts-form__group {
+  flex: 1 1 calc(50% - 20px);
+}
+
+.contacts-form__description {
+  color: #f5f5f5;
+}
+
+.contacts-form__title {
+  margin-bottom: 60px;
+  font-size: 40px;
+}
+
+#nomeEmail {
+  display: flex;
+  gap: 20px;
+}
+
+#nomeEmail input {
+  width: 251px;
+}
+
+.contacts-form__input,
+.contacts-form__textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #f7f7f7;
+  font-size: 16px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #f7f7f7;
+}
+
+.contacts-form__textarea {
+  height: 150px;
+}
+
+.contacts-form__button {
+  width: 184px;
+  height: 56px;
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 20px;
+}
+
+.contacts-form__button:hover {
+  background-color: transparent;
+  border: 1px solid var(--color-tertiary);
+  color: var(--color-tertiary);
+  transform: scale(1.05);
+}
+
+/*.............................................Três formas de Contacto: Morada, Telefones, E-mail*/
+
+/* BLOCO PRINCIPAL: threeContacts */
+#threeContacts {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 248px;
+}
+
+#threeContacts h4 {
+  margin-bottom: 60px;
+}
+
+/* ELEMENTOS DO BLOCO: contacts__item */
+.contacts__item {
+  flex: 1 1 calc(33.33% - 20px);
+  display: flex;
+  justify-content: left;
+  border-radius: 40px;
+}
+
+/* Card principal */
+.card {
+  position: relative;
+  width: 413px;
+  height: auto;
+  border: none;
+}
+
+/* Background do card */
+.card__background img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Conteúdo do card */
+.card__content {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  text-align: left;
+  z-index: 2;
+}
+
+/* Cabeçalho do card */
+.card__header {
+  display: flex;
+  align-items: left;
+  gap: 16px;
+}
+
+/* Ícone do card */
+.card__icon {
+  height: 24px;
+  width: 24px;
+  flex-shrink: 0;
+  color: #080419;
+}
+
+/* Título do card */
+.card__title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/* Texto do card */
+.card__text {
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+/*.............................................Mapa*/
+section.map-container {
+  min-width: 100%;
+  width: 100%;
+  height: 600px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 248px;
+}
+section.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/*.............................................Media Query Pagina Contactos*/
+
+@media (max-width: 748px) {
+  body {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 90%,
+        rgba(8, 4, 25, 1) 100%
+      ),
+      url("../img/background_body_mobile.png");
+    background-position: center top;
+    background-size: cover;
+  }
+  .main-container {
+    width: 342px;
+  }
+  section.title-container {
+    max-width: 324px;
+    width: 100%;
+    padding: 300px 0 100px 0;
+  }
+  .main-container .title-container h2 {
+    font-size: 40px;
+    padding-left: 24px;
+  }
+
+  /*...............Formulário */
+  .contacts-form {
+    display: flex;
+    flex-direction: column;
+    width: 342px;
+    padding: 24px 20px;
+    margin: 100px auto auto;
+    gap: 24px;
+  }
+
+  .contacts-form__title {
+    font-size: 32px;
+    line-height: 120%;
+    margin-bottom: 20px;
+  }
+
+  .contacts-form__group {
+    width: 302px;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  #nomeEmail {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #nomeEmail input {
+    width: 100%;
+  }
+
+  .contacts-form__input,
+  .contacts-form__textarea {
+    width: 100%;
+    height: auto;
+  }
+
+  .contacts-form__textarea {
+    height: 150px;
+  }
+
+  .contacts-form__button {
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  /*...............Três formas de Contacto: Morada, Telefones, E-mail */
+
+  /* BLOCO PRINCIPAL: threeContacts */
+  #threeContacts {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 164px;
+    padding: 0 24px;
+    box-sizing: border-box;
+  }
+
+  /* ELEMENTOS DO BLOCO: contacts__item */
+  .contacts__item {
+    flex: none;
+    width: 100%;
+    max-width: 342px;
+    display: flex;
+    justify-content: center;
+    border-radius: 40px;
+  }
+
+  /* Card principal */
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Background do card */
+  .card__background img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Conteúdo do card */
+  .card__content {
+    top: 20px;
+    left: 20px;
+  }
+
+  /*...............Mapa */
+
+  /* Responsividade para o mapa */
+  section.map-container {
+    width: 100%;
+    height: 600px;
+    margin-bottom: 164px;
+  }
+
+  section.map-container iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
