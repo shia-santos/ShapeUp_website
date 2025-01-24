@@ -10,15 +10,7 @@ The primary goal was to provide an intuitive and fast navigation experience, ens
 
 ## 🚀 Live Demo
 
-https://shia-santos.github.io/Flora_Website/
-
-### Recommended User Journey
-
-The user visits the website and browses the landing page;
-The user selects the "Buy Now" option on the weekly highlight;
-They are redirected to the payment form, where they simply fill in and submit their details.
-
-***– Bonus:*** A "Page Under Construction" screen has been added for non-functional links, e.g., clicking other navbar items.
+https://shia-santos.github.io/ShapeUp_website/
 
 ---
 
