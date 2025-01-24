@@ -39,7 +39,7 @@ It was a team effort created in two weeks to practice building a website with a 
 
 ---
 
-## 👤 Author
+## 👤 Authors
 
 Vagner Oliveira
 Sofia Santos
